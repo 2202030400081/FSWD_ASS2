@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-blue-900 text-white flex flex-col p-5 space-y-6">
+            <h2 class="text-2xl font-bold">Dashboard</h2>
+            <nav class="flex flex-col space-y-4">
+                <a href="index.html" class="hover:bg-blue-700 p-2 rounded">Home</a>
+                <a href="users.html" class="hover:bg-blue-700 p-2 rounded">Users</a>
+                <a href="settings.html" class="hover:bg-blue-700 p-2 rounded">Settings</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Navbar -->
+            <header class="bg-white shadow-md p-4 flex justify-between items-center">
+                <h1 class="text-xl font-bold">Dashboard Overview</h1>
+                <input type="text" placeholder="Search..." class="border p-2 rounded-lg">
+            </header>
+            
+            <!-- Dashboard Widgets -->
+            <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Total Users</h3>
+                    <p class="text-3xl font-bold">1,250</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Revenue</h3>
+                    <p class="text-3xl font-bold">$45,000</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Orders</h3>
+                    <p class="text-3xl font-bold">320</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">New Clients</h3>
+                    <p class="text-3xl font-bold">89</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
